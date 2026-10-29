@@ -1,7 +1,7 @@
 const currentPage = document.body.dataset.page || 'home';
 const navItems = [['people','People'],['publications','Publications'],['research','Research'],['teaching','Teaching'],['news','News'],['join','Contact']];
 const header = document.querySelector('#site-header');
-if (header) header.innerHTML = `<a class="logo" href="index.html"><strong>SAGE</strong><span>Sustainability Analytics, Governance &amp; Environment Lab</span></a><button class="menu" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav">${navItems.map(([slug,label])=>`<a class="${currentPage===slug?'active':''}" href="${slug}.html">${label}</a>`).join('')}</nav>`;
+if (header) header.innerHTML = `<a class="logo" href="index.html"><strong>SAGE Lab</strong><span>Sustainability Analytics, Governance &amp; Environment Lab</span></a><button class="menu" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav">${navItems.map(([slug,label])=>`<a class="${currentPage===slug?'active':''}" href="${slug}.html">${label}</a>`).join('')}</nav>`;
 const footer = document.querySelector('#site-footer');
 if (footer) footer.innerHTML = `<a class="footer-brand" href="index.html"><strong>SAGE Lab</strong><span>Sustainability Analytics, Governance &amp; Environment Lab</span></a><p class="footer-address">Adelphi University<br>Science Building 324<br>South Avenue, Garden City,<br>New York, USA 11530<br>Office: (+1) 516-833-8184</p><p class="footer-contact"><a href="mailto:kylee@adelphi.edu">kylee@adelphi.edu</a><br><a href="join.html">Contact →</a></p><small>© ${new Date().getFullYear()} SAGE Lab</small>`;
 const menu=document.querySelector('.menu'),nav=document.querySelector('#nav');
