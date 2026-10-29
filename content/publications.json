@@ -3,31 +3,31 @@
     "venue": "Environmental Impact Assessment Review",
     "year": "2026",
     "title": "Exploring the relationship between air quality and happiness in South Korea using artificial neural networks",
-    "description": "An artificial-neural-network analysis of connections between air quality and subjective well-being in South Korea.",
+    "description": "",
     "url": "https://doi.org/10.1016/j.eiar.2025.108135",
-    "image": ""
+    "image": "assets/images/journal-eiar.jpg"
   },
   {
     "venue": "Energy Research & Social Science",
     "year": "2026",
     "title": "Proposing a Value-Sharing Mechanism for Wind Power: Impact of Benefit-sharing and Community Engagement on Acceptance and Environmental Awareness",
-    "description": "Research on how benefit-sharing and community engagement shape wind-power acceptance and environmental awareness.",
+    "description": "",
     "url": "https://doi.org/10.1016/j.erss.2026.104537",
-    "image": ""
+    "image": "assets/images/journal-erss.jpg"
   },
   {
     "venue": "Environment, Development and Sustainability",
     "year": "2025",
     "title": "Varied Drivers for Reducing CO2 Emissions in Countries with Legislated Carbon Neutrality Targets: A Kaya Identity Clustering Analysis",
-    "description": "A cross-national clustering analysis of the drivers associated with emissions reductions under legislated carbon-neutrality targets.",
+    "description": "",
     "url": "https://doi.org/10.1007/s10668-025-06223-2",
-    "image": ""
+    "image": "assets/images/journal-eds.webp"
   },
   {
     "venue": "ACM BuildSys",
     "year": "2021",
     "title": "Operational characteristics of residential air conditioners with temporally granular remote thermographic imaging",
-    "description": "Remote thermographic imaging used to examine temporally granular patterns in residential air-conditioner operation.",
+    "description": "",
     "url": "https://doi.org/10.1145/3486611.3486659",
     "image": ""
   }

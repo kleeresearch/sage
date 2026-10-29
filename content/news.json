@@ -16,7 +16,8 @@
     "date": "FALL 2026",
     "title": "SAGE Lab launches at Adelphi University",
     "description": "The Sustainability Analytics, Governance & Environment Lab begins interdisciplinary research at the intersection of energy, environment, policy, sustainability, and data science.",
-    "image": "",
+    "image": "assets/images/sage-lab-logo.png",
+    "imageFit": "contain",
     "body": [
       "The Sustainability Analytics, Governance & Environment Lab launched at Adelphi University in Fall 2026.",
       "SAGE brings together environmental research, policy analysis, sustainability, and data science to develop evidence that can inform public decisions."
@@ -28,11 +29,12 @@
     "date": "FALL 2026",
     "title": "Office of Sustainability launches",
     "description": "Dr. Kyungmin Lee begins serving as Sustainability Director and supporting campus sustainability initiatives at Adelphi University.",
-    "image": "",
+    "image": "assets/images/office-sustainability-adelphi.jpg",
+    "imageFit": "cover",
     "body": [
       "Adelphi University's Office of Sustainability launched in Fall 2026 to coordinate and advance sustainability initiatives across campus.",
       "The office supports assessment, collaboration, student engagement, and evidence-based planning across academic and operational areas."
     ],
-    "gallery": []
+    "gallery": ["assets/images/office-sustainability-adelphi.jpg"]
   }
 ]
