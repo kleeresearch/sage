@@ -146,3 +146,10 @@ body[data-page="people"] .contact-panel .button{font-size:1.52rem;padding:1.1rem
 @media(max-width:1150px){.site-header nav a{font-size:.76rem}}
 @media(max-width:760px){.affiliations>.eyebrow{font-size:1.5rem}.theme-strip strong{font-size:1rem}.theme-strip span{font-size:.66rem}}
 @media(max-width:580px){.logo span{display:none}.home-copy>p.hero-intro{font-size:.55rem}.theme-strip strong{font-size:1rem}.affiliations>.eyebrow{font-size:1.25rem}body[data-page="people"] .contact-panel .button{font-size:1.15rem}}
+
+/* October 2026 typography refinements */
+.home-copy>p.hero-intro{font-size:clamp(.775rem,1.2vw,1.325rem);line-height:1.55;max-width:620px}
+.site-header nav a{font-size:1.14rem}
+.course-term{display:block;font-size:1.45rem;line-height:1.55;font-weight:500;color:var(--muted)}
+@media(max-width:1150px){.site-header nav a{font-size:1.14rem}}
+@media(max-width:580px){.home-copy>p.hero-intro{font-size:.75rem}.course-term{font-size:1.2rem}}
