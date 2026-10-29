@@ -13,7 +13,7 @@
   },
   {
     "slug": "sage-lab-launches",
-    "date": "FALL 2026",
+    "date": "SEPTEMBER 2026",
     "title": "SAGE Lab launches at Adelphi University",
     "description": "The Sustainability Analytics, Governance & Environment Lab begins interdisciplinary research at the intersection of energy, environment, policy, sustainability, and data science.",
     "image": "assets/images/sage-lab-logo.png",
@@ -25,16 +25,18 @@
     "gallery": []
   },
   {
-    "slug": "office-of-sustainability-launches",
-    "date": "FALL 2026",
-    "title": "Office of Sustainability launches",
-    "description": "Dr. Kyungmin Lee begins serving as Sustainability Director and supporting campus sustainability initiatives at Adelphi University.",
-    "image": "assets/images/office-sustainability-adelphi.jpg",
+    "slug": "adelphi-welcomes-new-faculty-2026-2027",
+    "date": "SEPTEMBER 2026",
+    "title": "Adelphi University Welcomes New Faculty for 2026–2027",
+    "description": "Adelphi University welcomes Dr. Kyungmin Lee as an assistant professor in Environmental Studies and Sciences and sustainability director.",
+    "image": "assets/images/adelphi-new-faculty-2026.jpg",
     "imageFit": "cover",
     "body": [
-      "Adelphi University's Office of Sustainability launched in Fall 2026 to coordinate and advance sustainability initiatives across campus.",
-      "The office supports assessment, collaboration, student engagement, and evidence-based planning across academic and operational areas."
+      "Adelphi University welcomed its new faculty for the 2026–2027 academic year, including Dr. Kyungmin Lee, assistant professor in the Department of Environmental Studies and Sciences and sustainability director.",
+      "Dr. Lee's research spans energy policy, climate policy, urban sustainability, and community development using qualitative and quantitative methods. Her recent work applies artificial intelligence to large-scale image analysis to understand public responses to environmental issues.",
+      "Dr. Lee holds a doctoral degree in energy and environmental policy, a master's degree in environmental studies, and a bachelor's degree in economics."
     ],
-    "gallery": ["assets/images/office-sustainability-adelphi.jpg"]
+    "gallery": ["assets/images/adelphi-new-faculty-2026.jpg"],
+    "source": "https://www.adelphi.edu/news/adelphi-university-welcomes-new-faculty-for-2026-2027/"
   }
 ]
