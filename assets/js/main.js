@@ -3,17 +3,17 @@ const navItems = [['people','People'],['publications','Publications'],['research
 const header = document.querySelector('#site-header');
 if (header) header.innerHTML = `<a class="logo" href="index.html"><strong>SAGE</strong><span>Sustainability Analytics, Governance &amp; Environment Lab</span></a><button class="menu" aria-expanded="false" aria-controls="nav">Menu</button><nav id="nav">${navItems.map(([slug,label])=>`<a class="${currentPage===slug?'active':''}" href="${slug}.html">${label}</a>`).join('')}</nav>`;
 const footer = document.querySelector('#site-footer');
-if (footer) footer.innerHTML = `<a class="footer-brand" href="index.html"><strong>SAGE Lab</strong><span>Data · Policy · Sustainability</span></a><p>Adelphi University<br>Garden City, New York</p><p><a href="mailto:kylee@adelphi.edu">kylee@adelphi.edu</a><br><a href="join.html">Join the lab →</a></p><small>© ${new Date().getFullYear()} SAGE Lab</small>`;
+if (footer) footer.innerHTML = `<a class="footer-brand" href="index.html"><strong>SAGE Lab</strong><span>Sustainability Analytics, Governance &amp; Environment Lab</span></a><p class="footer-address">Adelphi University<br>Science Building 324<br>South Avenue, Garden City,<br>New York, USA 11530<br>516.833.8184</p><p class="footer-contact"><a href="mailto:kylee@adelphi.edu">kylee@adelphi.edu</a><br><a href="join.html">Join the lab →</a></p><small>© ${new Date().getFullYear()} SAGE Lab</small>`;
 const menu=document.querySelector('.menu'),nav=document.querySelector('#nav');
 menu?.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
 async function getData(path){const response=await fetch(path);if(!response.ok)throw new Error(`${response.status}`);return response.json();}
 function setContent(selector,html){const node=document.querySelector(selector);if(node)node.innerHTML=html;}
 function fail(selector){setContent(selector,'<p class="loading">Content will be available when the site is published.</p>');}
-const renderMember=member=>`<article class="person-card"><div class="person-photo">${member.photo?`<img src="${member.photo}" alt="${member.name}">`:`<span>${member.initials}</span>`}</div><div class="person-body"><p class="kicker">${member.role}</p><h3>${member.name}</h3><p>${member.affiliation}</p><p class="small">${member.interests}</p></div></article>`;
+const renderMember=member=>`<article class="person-card"><div class="person-photo">${member.photo?`<img src="${member.photo}" alt="${member.name}">`:`<span>${member.initials}</span>`}</div><div class="person-body"><p class="kicker">${member.role}</p><h3>${member.name}</h3><p>${member.affiliation}</p><p class="small">${member.interests}</p>${member.links?.length?`<div class="profile-links">${member.links.map(link=>`<a href="${link.url}"${link.url.startsWith('http')?' target="_blank" rel="noopener"':''}>${link.label}${link.url.startsWith('http')?' ↗':''}</a>`).join('')}</div>`:''}</div></article>`;
 const renderPublication=item=>`<article class="paper-row"><div class="paper-year">${item.year}</div><div><p class="kicker">${item.venue}</p><h3>${item.title}</h3><p>${item.description}</p></div>${item.url?`<a class="arrow-link" href="${item.url}" target="_blank" rel="noopener">DOI ↗</a>`:''}</article>`;
-const renderNews=item=>`<article class="news-card">${item.image?`<img src="${item.image}" alt="${item.title}">`:'<div class="news-placeholder"><span>SAGE</span></div>'}<div class="card-body"><time>${item.date}</time><h3>${item.title}</h3><p>${item.description||''}</p>${item.url?`<a class="arrow-link" href="${item.url}" target="_blank" rel="noopener">Read more ↗</a>`:''}</div></article>`;
+const renderNews=item=>`<article class="news-card">${item.image?`<a href="news-article.html?slug=${encodeURIComponent(item.slug)}"><img src="${item.image}" alt="${item.title}"></a>`:`<a class="news-placeholder" href="news-article.html?slug=${encodeURIComponent(item.slug)}"><span>SAGE</span></a>`}<div class="card-body"><time>${item.date}</time><h3><a class="card-title-link" href="news-article.html?slug=${encodeURIComponent(item.slug)}">${item.title}</a></h3><p>${item.description||''}</p><a class="arrow-link" href="news-article.html?slug=${encodeURIComponent(item.slug)}">Read article →</a></div></article>`;
 const renderResearch=item=>`<article class="research-card"><div class="research-art art-${item.color}"><span>${item.number}</span><b>${item.short}</b></div><div class="card-body"><p class="kicker">${item.status}</p><h3>${item.title}</h3><p>${item.description}</p><div class="tags">${item.methods.map(x=>`<span>${x}</span>`).join('')}</div></div></article>`;
-const renderCourse=item=>`<article class="course-row"><div><p class="kicker">${item.code}</p><span>${item.term}</span></div><div><h3>${item.title}</h3><p>${item.description}</p></div></article>`;
+const renderCourse=item=>`<article class="course-row"><div><p class="course-institution">${item.institution||''}</p><p class="kicker">${item.code}</p>${item.terms?.map(term=>`<span class="course-term">${term}</span>`).join('')||''}</div><div><h3>${item.title}</h3>${item.description?`<p>${item.description}</p>`:''}</div></article>`;
 async function populate(){
  if(document.querySelector('#member-grid')){try{const d=await getData('content/members.json');setContent('#member-grid',d.map(renderMember).join(''));}catch{fail('#member-grid');}}
  if(document.querySelector('#publication-list')){try{let d=await getData('content/publications.json');if(document.body.dataset.limit)d=d.slice(0,Number(document.body.dataset.limit));setContent('#publication-list',d.map(renderPublication).join(''));}catch{fail('#publication-list');}}
@@ -22,3 +22,20 @@ async function populate(){
  if(document.querySelector('#course-list')){try{const d=await getData('content/teaching.json');setContent('#course-list',d.map(renderCourse).join(''));}catch{fail('#course-list');}}
 }
 populate();
+
+async function populateNewsArticle(){
+ const root=document.querySelector('#news-article');
+ if(!root)return;
+ try{
+  const slug=new URLSearchParams(window.location.search).get('slug');
+  const items=await getData('content/news.json');
+  const item=items.find(entry=>entry.slug===slug);
+  if(!item)throw new Error('Article not found');
+  document.title=`${item.title} | SAGE Lab`;
+  const gallery=(item.gallery||[]).map((src,index)=>`<figure><img src="${src}" alt="${item.title}${index?` — image ${index+1}`:''}"></figure>`).join('');
+  root.innerHTML=`<article><header class="article-hero"><a class="article-back" href="news.html">← Back to News</a><time>${item.date}</time><h1>${item.title}</h1><p>${item.description||''}</p></header><div class="article-content">${item.body?.map(paragraph=>`<p>${paragraph}</p>`).join('')||''}${gallery?`<div class="article-gallery">${gallery}</div>`:''}</div></article>`;
+ }catch{
+  root.innerHTML='<section class="article-shell"><h1>Article not found</h1><p><a class="text-link" href="news.html">Return to News</a></p></section>';
+ }
+}
+populateNewsArticle();

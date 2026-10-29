@@ -5,6 +5,21 @@
     "role": "Principal Investigator",
     "affiliation": "Assistant Professor, Department of Environmental Studies and Sciences; Sustainability Director, Office of Sustainability, Adelphi University",
     "interests": "Energy and environmental policy, sustainability analytics, artificial intelligence, satellite and thermal imagery, and computational social science",
-    "photo": "assets/images/kyungmin-lee-profile.jpg"
+    "photo": "assets/images/kyungmin-lee-profile.jpg",
+    "links": [
+      {"label":"CV","url":"assets/files/kyungmin-lee-cv.pdf"},
+      {"label":"Email","url":"mailto:kylee@adelphi.edu"},
+      {"label":"ORCID","url":"https://orcid.org/0000-0001-9599-6362"},
+      {"label":"Google Scholar","url":"https://scholar.google.com/citations?user=06i8-GQAAAAJ&hl=en"}
+    ]
+  },
+  {
+    "name": "Linda Beneventano",
+    "initials": "LB",
+    "role": "Master's Student",
+    "affiliation": "M.S. Student in Biology, Adelphi University",
+    "interests": "Environmental impacts of data centers, urban heat, electromagnetic fields and biodiversity, and thermal imaging of energy infrastructure",
+    "photo": "",
+    "links": []
   }
 ]

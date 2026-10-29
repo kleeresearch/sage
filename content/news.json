@@ -1,30 +1,38 @@
 [
   {
+    "slug": "office-of-sustainability-aashe-2026",
     "date": "OCTOBER 2026",
-    "title": "SAGE at the AASHE Conference",
+    "title": "Office of Sustainability at AASHE 2026 Conference",
     "description": "Dr. Kyungmin Lee participated in the AASHE Conference, connecting with the higher education sustainability community and advancing campus sustainability assessment work.",
-    "url": "",
-    "image": "assets/images/aashe-conference-2026.jpg"
+    "image": "assets/images/aashe-conference-2026.jpg",
+    "body": [
+      "The Office of Sustainability participated in the 2026 AASHE Conference to connect with the higher education sustainability community and strengthen Adelphi University's campus sustainability work.",
+      "The conference provided opportunities to learn from peer institutions, explore approaches to sustainability assessment and reporting, and identify strategies that can support future campus initiatives."
+    ],
+    "gallery": ["assets/images/aashe-conference-2026.jpg"]
   },
   {
+    "slug": "sage-lab-launches",
     "date": "FALL 2026",
     "title": "SAGE Lab launches at Adelphi University",
     "description": "The Sustainability Analytics, Governance & Environment Lab begins interdisciplinary research at the intersection of energy, environment, policy, sustainability, and data science.",
-    "url": "",
-    "image": ""
+    "image": "",
+    "body": [
+      "The Sustainability Analytics, Governance & Environment Lab launched at Adelphi University in Fall 2026.",
+      "SAGE brings together environmental research, policy analysis, sustainability, and data science to develop evidence that can inform public decisions."
+    ],
+    "gallery": []
   },
   {
+    "slug": "office-of-sustainability-launches",
     "date": "FALL 2026",
     "title": "Office of Sustainability launches",
     "description": "Dr. Kyungmin Lee begins serving as Sustainability Director and supporting campus sustainability initiatives at Adelphi University.",
-    "url": "",
-    "image": ""
-  },
-  {
-    "date": "2026",
-    "title": "New research on urban heat and cooling infrastructure",
-    "description": "Ongoing research uses high-resolution imagery and machine learning to inform urban heat policy.",
-    "url": "",
-    "image": ""
+    "image": "",
+    "body": [
+      "Adelphi University's Office of Sustainability launched in Fall 2026 to coordinate and advance sustainability initiatives across campus.",
+      "The office supports assessment, collaboration, student engagement, and evidence-based planning across academic and operational areas."
+    ],
+    "gallery": []
   }
 ]

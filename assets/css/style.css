@@ -2,3 +2,42 @@
 @media(max-width:900px){.menu{display:block}.site-header nav{display:none;position:absolute;left:0;right:0;top:82px;background:var(--paper);padding:1.5rem 5vw;flex-direction:column;border-bottom:1px solid var(--line)}.site-header nav.open{display:flex}.home-hero{grid-template-columns:1fr}.home-photo{min-height:520px;order:-1}.theme-strip{grid-template-columns:1fr 1fr}.theme-strip div:nth-child(2){border-right:0}.section-head,.page-hero{grid-template-columns:1fr;gap:1rem}.card-grid,.person-grid{grid-template-columns:1fr 1fr}.paper-row{grid-template-columns:80px 1fr}.paper-row .arrow-link{grid-column:2}.site-footer{grid-template-columns:1fr 1fr}}
 @media(max-width:580px){.logo span{display:none}.home-copy,.section,.page-hero{padding:4.5rem 6vw}.home-copy h1{font-size:3.2rem}.home-photo{min-height:430px}.theme-strip{grid-template-columns:1fr}.theme-strip div{border-right:0;border-bottom:1px solid var(--line);padding:1.3rem 6vw}.card-grid,.person-grid{grid-template-columns:1fr}.paper-row,.course-row{grid-template-columns:1fr;gap:.4rem}.paper-row .arrow-link{grid-column:1}.join-grid{grid-template-columns:1fr}.contact-panel{align-items:flex-start;flex-direction:column}.site-footer{grid-template-columns:1fr}}
 .home-photo.logo-panel{background:var(--cream);display:grid;place-items:center;padding:5vw}.home-photo.logo-panel img{width:min(92%,620px);height:auto;max-height:80%;object-fit:contain}.home-photo.logo-panel:after{display:none}
+
+/* Refined homepage and footer typography */
+.logo span{font-size:.68rem;max-width:330px}
+.home-copy .hero-university{font:600 clamp(1.75rem,3vw,3.7rem)/1 var(--display);letter-spacing:-.035em;text-transform:none;margin-bottom:1.5rem}
+.home-copy>p:not(.eyebrow){font-size:2.2rem;line-height:1.35;max-width:850px}
+.hero-links{margin-top:2.5rem}
+.home-copy .button{padding:1.15rem 1.5rem;font-size:1.52rem;line-height:1.15}
+.section-head.section-head-solo{display:block}
+.site-footer{padding:3.5rem 5vw;grid-template-columns:minmax(240px,1.35fr) minmax(220px,1fr) minmax(220px,.8fr) auto;gap:2.5rem;font-size:.85rem}
+.footer-brand strong{font-size:1.35rem}
+.footer-brand span{font-size:.82rem;line-height:1.45;max-width:360px;margin-top:.4rem}
+.footer-address{margin:0;line-height:1.75}
+.footer-contact{margin:0;font-size:1.05rem;line-height:1.9;font-weight:600;color:white}
+@media(max-width:900px){.site-footer{grid-template-columns:1fr 1fr}.home-copy>p:not(.eyebrow){font-size:1.7rem}.home-copy .button{font-size:1.15rem}}
+@media(max-width:580px){.home-copy .hero-university{font-size:1.6rem}.home-copy>p:not(.eyebrow){font-size:1.35rem}.home-copy .button{font-size:1rem;padding:1rem 1.2rem}.site-footer{grid-template-columns:1fr}}
+
+/* Simplified internal pages, profiles, courses, and article pages */
+.page-hero.page-hero-simple{min-height:280px;display:block;padding-top:6vw;padding-bottom:6vw}
+.page-hero.page-hero-simple h1{margin:0}
+.profile-links{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--line)}
+.profile-links a{font-size:.72rem;font-weight:700;text-decoration:none;border-bottom:1px solid currentColor;color:var(--green)}
+.course-institution{font:600 1rem var(--display);margin:0 0 .45rem;color:var(--ink)}
+.course-term{display:block}
+.join-grid li{font-size:1.23rem;line-height:1.55}
+.application-panel .button{font-size:1.52rem;padding:1.15rem 1.5rem}
+.card-title-link{color:inherit;text-decoration:none}
+.card-title-link:hover{text-decoration:underline}
+a.news-placeholder{text-decoration:none}
+.article-hero{background:var(--deep);color:white;padding:7vw max(7vw,calc((100vw - 1080px)/2));}
+.article-hero time{display:block;color:#b9d9cd;font-size:.75rem;font-weight:700;letter-spacing:.12em;margin:2.5rem 0 1rem}
+.article-hero h1{font:600 clamp(2.7rem,5vw,5.8rem)/1 var(--display);letter-spacing:-.05em;max-width:1000px;margin:0 0 1.5rem}
+.article-hero p{font-size:1.15rem;color:#d1ded9;max-width:780px}
+.article-back{font-size:.8rem;font-weight:700;color:white;text-decoration:none;border-bottom:1px solid currentColor}
+.article-content,.article-shell{max-width:900px;margin:0 auto;padding:5rem 7vw}
+.article-content>p{font-size:1.1rem;line-height:1.85;margin:0 0 1.5rem}
+.article-gallery{display:grid;gap:1.5rem;margin-top:3rem}
+.article-gallery figure{margin:0}
+.article-gallery img{display:block;width:100%;height:auto}
+@media(max-width:580px){.page-hero.page-hero-simple{min-height:220px;padding-top:4rem;padding-bottom:4rem}.join-grid li{font-size:1rem}.application-panel .button{font-size:1.05rem}.article-content,.article-shell{padding:3rem 6vw}}
