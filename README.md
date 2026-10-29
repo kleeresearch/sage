@@ -30,6 +30,8 @@ Publication and news photos use the same pattern:
 
 Dr. Kyungmin Lee's CV is available at `assets/files/kyungmin-lee-cv.pdf`.
 
+The primary SAGE Lab logo is available at `assets/images/sage-lab-logo.png`.
+
 ## Preview on your Mac
 
 You can open `index.html` directly in a browser. For the most reliable preview, open Terminal in this folder and run:
