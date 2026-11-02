@@ -1,5 +1,19 @@
 [
   {
+    "slug": "office-of-sustainability-news-2026",
+    "date": "OCTOBER 2026",
+    "title": "How Adelphi University Is Making Sustainability a Campus Priority",
+    "description": "Dr. Kyungmin Lee was interviewed for the Office of Sustainability’s expanding campus sustainability initiatives, including the STARS assessment and new opportunities for student engagement.",
+    "image": "assets/images/office-sustainability-adelphi.jpg",
+    "imageFit": "cover",
+    "body": [
+      "Adelphi University is expanding its commitment to a more sustainable campus through coordinated initiatives led by Dr. Kyungmin Lee, the University's inaugural director of sustainability and an assistant professor in the Department of Environmental Studies and Sciences.",
+      "A central part of this work is Adelphi's participation in the Sustainability Tracking, Assessment & Rating System (STARS). The initiative will bring together students, faculty, and staff to document existing accomplishments, assess sustainability performance across campus, and identify opportunities for future action."
+    ],
+    "gallery": ["assets/images/office-sustainability-adelphi.jpg"],
+    "source": "https://www.adelphi.edu/news/how-adelphi-university-is-making-sustainability-a-campus-priority/"
+  },
+  {
     "slug": "office-of-sustainability-aashe-2026",
     "date": "OCTOBER 2026",
     "title": "Office of Sustainability at AASHE 2026 Conference",
@@ -10,19 +24,6 @@
       "The conference provided opportunities to learn from peer institutions, explore approaches to sustainability assessment and reporting, and identify strategies that can support future campus initiatives."
     ],
     "gallery": ["assets/images/aashe-conference-2026.jpg"]
-  },
-  {
-    "slug": "sage-lab-launches",
-    "date": "SEPTEMBER 2026",
-    "title": "SAGE Lab launches at Adelphi University",
-    "description": "The Sustainability Analytics, Governance & Environment Lab begins interdisciplinary research at the intersection of energy, environment, policy, sustainability, and data science.",
-    "image": "assets/images/sage-lab-logo.png",
-    "imageFit": "contain",
-    "body": [
-      "The Sustainability Analytics, Governance & Environment Lab launched at Adelphi University in Fall 2026.",
-      "SAGE brings together environmental research, policy analysis, sustainability, and data science to develop evidence that can inform public decisions."
-    ],
-    "gallery": []
   },
   {
     "slug": "adelphi-welcomes-new-faculty-2026-2027",
